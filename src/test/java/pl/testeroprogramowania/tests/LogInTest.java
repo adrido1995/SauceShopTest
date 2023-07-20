@@ -26,6 +26,13 @@ public class LogInTest extends BaseTest {
         Assert.assertEquals(errorMessage.getText(), "Epic sadface: Username and password do not match any user in this service");
         }
 
+        @Test
+    public void performanceGlitchUserTest() {
+       WebElement spanText = new HomePage((driver)).LogIn("performance_glitch_user", "secret_sauce").LogInCheck();
+        Assert.assertEquals(spanText.getText(),"Sauce Labs Backpack");
+
+        }
+
 
 
 

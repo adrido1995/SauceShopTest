@@ -4,27 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f45328e-2f63-473e-9600-9690bddf001d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/models/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CheckoutCompletePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CheckoutInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CheckoutOverviewPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/ShopPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/bikeLightPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/CheckoutTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/LogInTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/utlis/DriverFactory.java" afterDir="false" />
+    <list default="true" id="1f45328e-2f63-473e-9600-9690bddf001d" name="Changes" comment="Add 3 tests, login test, login with invalid username and password, checkout test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/SortingProductsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/ShopPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/ShopPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/LogInTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,21 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Adrian/Desktop/SauceShop"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Adrian/Desktop/SauceShop&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.testeroprogramowania.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.pl.testeroprogramowania.tests">
-    <configuration name="CheckoutTest.CheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CheckoutTest.CheckoutOnPerformanceGlitchUserTest">
+    <configuration name="CheckoutTest.CheckoutOnPerformanceGlitchUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceShop" />
       <extension name="coverage">
         <pattern>
@@ -81,7 +65,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.testeroprogramowania.tests" />
       <option name="MAIN_CLASS_NAME" value="pl.testeroprogramowania.tests.CheckoutTest" />
-      <option name="METHOD_NAME" value="CheckoutTest" />
+      <option name="METHOD_NAME" value="CheckoutOnPerformanceGlitchUserTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -89,7 +73,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogInTest.LogInInvalidDataTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LogInTest.performanceGlitchUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceShop" />
       <extension name="coverage">
         <pattern>
@@ -99,7 +83,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.testeroprogramowania.tests" />
       <option name="MAIN_CLASS_NAME" value="pl.testeroprogramowania.tests.LogInTest" />
-      <option name="METHOD_NAME" value="LogInInvalidDataTest" />
+      <option name="METHOD_NAME" value="performanceGlitchUserTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -107,7 +91,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogInTest.LogInTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SortingProductsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceShop" />
       <extension name="coverage">
         <pattern>
@@ -116,8 +100,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.testeroprogramowania.tests" />
-      <option name="MAIN_CLASS_NAME" value="pl.testeroprogramowania.tests.LogInTest" />
-      <option name="METHOD_NAME" value="LogInTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.testeroprogramowania.tests.SortingProductsTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortingProductsTest.LowToHighSortingTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.testeroprogramowania.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.testeroprogramowania.tests" />
+      <option name="MAIN_CLASS_NAME" value="pl.testeroprogramowania.tests.SortingProductsTest" />
+      <option name="METHOD_NAME" value="LowToHighSortingTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -143,10 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckoutTest.CheckoutOnPerformanceGlitchUserTest" />
+        <item itemvalue="TestNG.LogInTest.performanceGlitchUserTest" />
         <item itemvalue="TestNG.pl.testeroprogramowania.tests" />
-        <item itemvalue="TestNG.CheckoutTest.CheckoutTest" />
-        <item itemvalue="TestNG.LogInTest.LogInInvalidDataTest" />
-        <item itemvalue="TestNG.LogInTest.LogInTest" />
+        <item itemvalue="TestNG.SortingProductsTest" />
+        <item itemvalue="TestNG.SortingProductsTest.LowToHighSortingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +161,18 @@
       <option name="presentableId" value="Default" />
       <updated>1688745096059</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add 3 tests, login test, login with invalid username and password, checkout test">
+      <created>1689427136904</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689427136904</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add 3 tests, login test, login with invalid username and password, checkout test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add 3 tests, login test, login with invalid username and password, checkout test" />
   </component>
 </project>

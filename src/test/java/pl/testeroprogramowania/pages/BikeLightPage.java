@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class bikeLightPage {
+public class BikeLightPage {
 
     @FindBy(xpath = "//button[@data-test='add-to-cart-sauce-labs-bike-light']")
             private WebElement addToCartButton;
@@ -14,7 +14,7 @@ public class bikeLightPage {
     WebDriver driver;
 
 
-    public bikeLightPage (WebDriver driver){
+    public BikeLightPage(WebDriver driver){
         PageFactory.initElements(driver,this);
         this.driver = driver;
     }
