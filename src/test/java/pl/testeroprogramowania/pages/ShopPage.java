@@ -16,6 +16,9 @@ public class ShopPage {
     @FindBy (linkText = "Sauce Labs Bike Light")
     private WebElement bikeLightLink;
 
+    @FindBy (linkText = "Sauce Labs Fleece Jacket")
+    private WebElement fleeceJacketLink;
+
     @FindBy(xpath = "//h3[@data-test='error']")
     private WebElement errorMessage;
 
@@ -45,10 +48,16 @@ public class ShopPage {
         PageFactory.initElements(driver,this);
         this.driver = driver;
     }
-    public BikeLightPage openProduct () {
+    public BikeLightPage openProductBikeLight () {
 
         bikeLightLink.click();
         return new BikeLightPage(driver);
+    }
+
+    public FleeceJacketPage openProductFleeceJacket () {
+
+        fleeceJacketLink.click();
+        return new FleeceJacketPage(driver);
     }
 
     public List<String> AtoZProductList() {

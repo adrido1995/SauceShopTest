@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f45328e-2f63-473e-9600-9690bddf001d" name="Changes" comment="Add 3 tests, login test, login with invalid username and password, checkout test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/SortingProductsTest.java" afterDir="false" />
+    <list default="true" id="1f45328e-2f63-473e-9600-9690bddf001d" name="Changes" comment="Add sorting tests and PerformanceUserGlitch tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/FleeceJacketPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/BikeLightPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/BikeLightPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CheckoutOverviewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CheckoutOverviewPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/ShopPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/ShopPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/LogInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/CheckoutTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
       <recent name="pl.testeroprogramowania.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CheckoutTest.CheckoutOnPerformanceGlitchUserTest">
+  <component name="RunManager" selected="TestNG.CheckoutTest.CheckoutWithTwoProductsTest">
     <configuration name="CheckoutTest.CheckoutOnPerformanceGlitchUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceShop" />
       <extension name="coverage">
@@ -66,6 +69,24 @@
       <option name="PACKAGE_NAME" value="pl.testeroprogramowania.tests" />
       <option name="MAIN_CLASS_NAME" value="pl.testeroprogramowania.tests.CheckoutTest" />
       <option name="METHOD_NAME" value="CheckoutOnPerformanceGlitchUserTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckoutTest.CheckoutWithTwoProductsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.testeroprogramowania.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.testeroprogramowania.tests" />
+      <option name="MAIN_CLASS_NAME" value="pl.testeroprogramowania.tests.CheckoutTest" />
+      <option name="METHOD_NAME" value="CheckoutWithTwoProductsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -108,24 +129,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingProductsTest.LowToHighSortingTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SauceShop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.testeroprogramowania.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.testeroprogramowania.tests" />
-      <option name="MAIN_CLASS_NAME" value="pl.testeroprogramowania.tests.SortingProductsTest" />
-      <option name="METHOD_NAME" value="LowToHighSortingTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="pl.testeroprogramowania.tests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceShop" />
       <extension name="coverage">
@@ -144,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckoutTest.CheckoutWithTwoProductsTest" />
+        <item itemvalue="TestNG.pl.testeroprogramowania.tests" />
         <item itemvalue="TestNG.CheckoutTest.CheckoutOnPerformanceGlitchUserTest" />
         <item itemvalue="TestNG.LogInTest.performanceGlitchUserTest" />
-        <item itemvalue="TestNG.pl.testeroprogramowania.tests" />
         <item itemvalue="TestNG.SortingProductsTest" />
-        <item itemvalue="TestNG.SortingProductsTest.LowToHighSortingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -168,11 +171,19 @@
       <option name="project" value="LOCAL" />
       <updated>1689427136904</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add sorting tests and PerformanceUserGlitch tests">
+      <created>1689864356157</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689864356157</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add 3 tests, login test, login with invalid username and password, checkout test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add 3 tests, login test, login with invalid username and password, checkout test" />
+    <MESSAGE value="Add sorting tests and PerformanceUserGlitch tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sorting tests and PerformanceUserGlitch tests" />
   </component>
 </project>
