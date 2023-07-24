@@ -20,10 +20,11 @@ public class CartPage {
     WebDriver driver;
 
 
-    public CartPage(WebDriver driver){
-        PageFactory.initElements(driver,this);
+    public CartPage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
         this.driver = driver;
     }
+
     public WebElement productCheck() {
         return productNameCheck;
     }

@@ -12,12 +12,13 @@ public class FleeceJacketPage {
     @FindBy(xpath = "//a[@class='shopping_cart_link']")
     private WebElement cartLink;
     WebDriver driver;
+
     public FleeceJacketPage(WebDriver driver) {
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
         this.driver = driver;
     }
 
-    public CartPage addToCart(){
+    public CartPage addToCart() {
         addToCartButton.click();
         cartLink.click();
         return new CartPage(driver);

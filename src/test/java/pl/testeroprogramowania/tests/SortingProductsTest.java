@@ -43,7 +43,7 @@ public class SortingProductsTest extends BaseTest {
     }
 
     @Test
-    public void LowToHighSortingTest(){
+    public void LowToHighSortingTest() {
         HomePage homePage = new HomePage(driver);
         List<String> productNames = homePage
                 .LogIn("standard_user", "secret_sauce")
@@ -58,7 +58,7 @@ public class SortingProductsTest extends BaseTest {
     }
 
     @Test
-    public void HighToLowSortingTest(){
+    public void HighToLowSortingTest() {
         HomePage homePage = new HomePage(driver);
         List<String> productNames = homePage
                 .LogIn("standard_user", "secret_sauce")

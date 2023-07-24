@@ -8,14 +8,15 @@ import org.openqa.selenium.support.PageFactory;
 public class CheckoutCompletePage {
 
     @FindBy(xpath = "//h2[@class='complete-header']")
-            private WebElement orderNotice;
+    private WebElement orderNotice;
     WebDriver driver;
+
     public CheckoutCompletePage(WebDriver driver) {
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
         this.driver = driver;
     }
 
-    public WebElement OrderNoticeCheck(){
+    public WebElement OrderNoticeCheck() {
         return orderNotice;
     }
 

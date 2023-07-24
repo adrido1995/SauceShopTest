@@ -17,21 +17,21 @@ public class HomePage {
     private WebElement loginButton;
 
 
-
     private WebDriver driver;
-    public HomePage (WebDriver driver){
-    PageFactory.initElements(driver,this);
-    this.driver = driver;
+
+    public HomePage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
+        this.driver = driver;
 
 
-}
+    }
 
     public ShopPage LogIn(String username, String password) {
-    usernameInput.sendKeys(username);
-    passwordInput.sendKeys(password);
-    loginButton.click();
-    return new ShopPage(driver);
-}
+        usernameInput.sendKeys(username);
+        passwordInput.sendKeys(password);
+        loginButton.click();
+        return new ShopPage(driver);
+    }
 
 
 }

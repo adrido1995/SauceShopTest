@@ -10,13 +10,13 @@ import java.util.stream.Collectors;
 
 public class ShopPage {
 
-    @FindBy (linkText = "Sauce Labs Backpack")
+    @FindBy(linkText = "Sauce Labs Backpack")
     private WebElement productName;
 
-    @FindBy (linkText = "Sauce Labs Bike Light")
+    @FindBy(linkText = "Sauce Labs Bike Light")
     private WebElement bikeLightLink;
 
-    @FindBy (linkText = "Sauce Labs Fleece Jacket")
+    @FindBy(linkText = "Sauce Labs Fleece Jacket")
     private WebElement fleeceJacketLink;
 
     @FindBy(xpath = "//h3[@data-test='error']")
@@ -44,17 +44,19 @@ public class ShopPage {
 
 
     private WebDriver driver;
+
     public ShopPage(WebDriver driver) {
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
         this.driver = driver;
     }
-    public BikeLightPage openProductBikeLight () {
+
+    public BikeLightPage openProductBikeLight() {
 
         bikeLightLink.click();
         return new BikeLightPage(driver);
     }
 
-    public FleeceJacketPage openProductFleeceJacket () {
+    public FleeceJacketPage openProductFleeceJacket() {
 
         fleeceJacketLink.click();
         return new FleeceJacketPage(driver);
@@ -86,10 +88,13 @@ public class ShopPage {
     }
 
 
+    public WebElement LogInCheck() {
+        return productName;
+    }
 
-    public WebElement LogInCheck() { return productName; }
-
-    public WebElement getError () {return errorMessage;}
+    public WebElement getError() {
+        return errorMessage;
+    }
 
     public List<String> getProductNameList() {
         return productList.stream()

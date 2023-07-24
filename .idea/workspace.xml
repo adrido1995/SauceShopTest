@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f45328e-2f63-473e-9600-9690bddf001d" name="Changes" comment="Add sorting tests and PerformanceUserGlitch tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/FleeceJacketPage.java" afterDir="false" />
+    <list default="true" id="1f45328e-2f63-473e-9600-9690bddf001d" name="Changes" comment="Add CheckoutWithTwoProductsTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/BikeLightPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/BikeLightPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CheckoutCompletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CheckoutCompletePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CheckoutInformationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CheckoutInformationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CheckoutOverviewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/CheckoutOverviewPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/FleeceJacketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/FleeceJacketPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/ShopPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/pages/ShopPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/CheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/LogInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/SortingProductsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/tests/SortingProductsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/utlis/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/testeroprogramowania/utlis/DriverFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +64,7 @@
       <recent name="pl.testeroprogramowania.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CheckoutTest.CheckoutWithTwoProductsTest">
+  <component name="RunManager" selected="TestNG.pl.testeroprogramowania.tests">
     <configuration name="CheckoutTest.CheckoutOnPerformanceGlitchUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauceShop" />
       <extension name="coverage">
@@ -147,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CheckoutTest.CheckoutWithTwoProductsTest" />
         <item itemvalue="TestNG.pl.testeroprogramowania.tests" />
+        <item itemvalue="TestNG.CheckoutTest.CheckoutWithTwoProductsTest" />
         <item itemvalue="TestNG.CheckoutTest.CheckoutOnPerformanceGlitchUserTest" />
         <item itemvalue="TestNG.LogInTest.performanceGlitchUserTest" />
         <item itemvalue="TestNG.SortingProductsTest" />
@@ -178,12 +185,20 @@
       <option name="project" value="LOCAL" />
       <updated>1689864356157</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add CheckoutWithTwoProductsTest">
+      <created>1689875263642</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689875263642</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add 3 tests, login test, login with invalid username and password, checkout test" />
     <MESSAGE value="Add sorting tests and PerformanceUserGlitch tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sorting tests and PerformanceUserGlitch tests" />
+    <MESSAGE value="Add CheckoutWithTwoProductsTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CheckoutWithTwoProductsTest" />
   </component>
 </project>

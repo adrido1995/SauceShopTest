@@ -12,7 +12,7 @@ import java.util.List;
 public class CheckoutTest extends BaseTest {
 
     @Test
-    public void CheckoutTest (){
+    public void CheckoutTest() {
 
         Customer customer = new Customer();
 
@@ -55,7 +55,7 @@ public class CheckoutTest extends BaseTest {
     }
 
     @Test
-    public void CheckoutWithTwoProductsTest () {
+    public void CheckoutWithTwoProductsTest() {
 
         Customer customer = new Customer();
 
