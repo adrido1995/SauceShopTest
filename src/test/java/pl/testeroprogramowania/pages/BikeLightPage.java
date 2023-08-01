@@ -1,5 +1,7 @@
 package pl.testeroprogramowania.pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,6 +18,7 @@ public class BikeLightPage {
     private WebElement backToProductsButton;
     WebDriver driver;
 
+    private static final Logger logger = LogManager.getLogger();
 
     public BikeLightPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -23,13 +26,16 @@ public class BikeLightPage {
     }
 
     public CartPage addToCart() {
+        logger.info("adding 'Bike Light' to the cart");
         addToCartButton.click();
         cartLink.click();
         return new CartPage(driver);
     }
 
     public ShopPage addToCartAndBackToProduct() {
+        logger.info("adding 'Bike Light' to the cart");
         addToCartButton.click();
+        logger.info("Back to products list page");
         backToProductsButton.click();
         return new ShopPage(driver);
     }

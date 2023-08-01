@@ -1,5 +1,7 @@
 package pl.testeroprogramowania.pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,24 +47,29 @@ public class ShopPage {
 
     private WebDriver driver;
 
+    private static final Logger logger = LogManager.getLogger();
+
     public ShopPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
 
     public BikeLightPage openProductBikeLight() {
-
+        logger.info("Opening the product page: 'Bike Light'");
         bikeLightLink.click();
+        logger.info("Page opened successfully");
         return new BikeLightPage(driver);
     }
 
     public FleeceJacketPage openProductFleeceJacket() {
-
+        logger.info("Opening the product page: 'FleeceJacket'");
         fleeceJacketLink.click();
+        logger.info("Page opened successfully");
         return new FleeceJacketPage(driver);
     }
 
     public List<String> AtoZProductList() {
+        logger.info("Sorting from a to z");
         sortContainer.click();
         azOption.click();
         return getProductNameList();
@@ -70,18 +77,21 @@ public class ShopPage {
     }
 
     public List<String> ZtoAProductList() {
+        logger.info("Sorting from z to a");
         sortContainer.click();
         zaOption.click();
         return getProductNameList();
     }
 
     public List<String> LowToHighProductList() {
+        logger.info("Sorting from low to high price");
         sortContainer.click();
         lowToHighOption.click();
         return getProductPriceList();
     }
 
     public List<String> HighToLowProductList() {
+        logger.info("Sorting from high to low price");
         sortContainer.click();
         highToLowOption.click();
         return getProductPriceList();
@@ -89,10 +99,12 @@ public class ShopPage {
 
 
     public WebElement LogInCheck() {
+        logger.info("Checking for correct login");
         return productName;
     }
 
     public WebElement getError() {
+        logger.info("Checking error Message");
         return errorMessage;
     }
 
